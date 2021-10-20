@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: fixed;
+  background-color: #e8e4e6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.login-body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 4rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.675rem;
+  color: #abd1c6;
+  transition: all 0.35s;
+}
+input {
+  height: inherit;
+  width: 16rem;
+  border: 2px solid #abd1c6;
+  border-radius: 0.5rem;
+  outline: none;
+  background: #e8e4e6;
+  color: #004643;
+  font-size: 1rem;
+  text-indent: 1rem;
+  transition: all 0.35s;
+}
+
+input:focus {
+  border-color: #004643;
+}
+input:focus ~ .icon {
+  color: #004643;
+}
+
+input::placeholder {
+  color: #abd1c6;
+}

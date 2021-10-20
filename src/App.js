@@ -1,9 +1,13 @@
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import Userpage from './Pages/UserPage';
+
 function App() {
   return (
     <div>
-      <hi>Heloo</hi>
-
-      <h2>Nice to meet you</h2>
+      <Login />
+      <Signup />
+      <Userpage />
     </div>
   );
 }
