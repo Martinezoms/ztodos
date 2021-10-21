@@ -5,7 +5,7 @@ import Userpage from './Pages/UserPage';
 function App() {
   return (
     <div>
-      <Login />
+      {/* <Login /> */}
       <Signup />
       <Userpage />
     </div>
