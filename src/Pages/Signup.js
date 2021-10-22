@@ -6,7 +6,7 @@ function Signup({ setPage }) {
   return (
     <div className="flex flex-col login-body items-center content-center">
       <SignupIntro />
-      <SignupBox setpage={setPage} />
+      <SignupBox setPage={setPage} />
       <div className="m-5 text-greeny">
         Maybe you already have an account{' '}
         <span role="img" aria-label="thinking">
