@@ -6,13 +6,13 @@ export default function LoginBox({ setPage }) {
   return (
     <div className="bg-lgreeny text-greeny shadow-md rounded-lg  p-24 flex flex-col items-center space-y-10 pt-20">
       <div className="wrapper">
-        <input spellCheck="false" maxLength="20" placeholder="Username" />
+        <input spellCheck="false" maxLength="20" placeholder="Username" className="input" />
         <span className="icon">
           <User />
         </span>
       </div>
       <div className="wrapper ">
-        <input spellCheck="false" maxLength="20" placeholder="Password" type="password" />
+        <input spellCheck="false" maxLength="20" placeholder="Password" type="password" className="input" />
         <span className="icon">
           <Lock />
         </span>

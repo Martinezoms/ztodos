@@ -31,7 +31,19 @@ html {
   color: #abd1c6;
   transition: all 0.35s;
 }
-input {
+.input {
+  height: inherit;
+  width: 16rem;
+  border: 2px solid #abd1c6;
+  border-radius: 0.5rem;
+  outline: none;
+  background: #e8e4e6;
+  color: #004643;
+  font-size: 1rem;
+  text-indent: 1rem;
+  transition: all 0.35s;
+}
+.modal-input {
   height: inherit;
   width: 32rem;
   border: 2px solid #abd1c6;

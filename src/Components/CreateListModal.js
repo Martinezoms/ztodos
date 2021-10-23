@@ -19,13 +19,13 @@ function CreateListModal({ setShowModal }) {
                 <div className="space-y-2">
                   <div>What is this list for?</div>
                   <div className="wrapper ">
-                    <input spellCheck="false" maxLength="20" placeholder="Insert title" />
+                    <input spellCheck="false" maxLength="20" placeholder="Insert title" className="modal-input" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div>How do you feel about it?</div>
                   <div className="wrapper">
-                    <input spellCheck="false" maxLength="3" placeholder="Insert emoji" />
+                    <input spellCheck="false" maxLength="3" placeholder="Insert emoji" className="modal-input" />
                     <span className="icon">
                       <Smile size="35" className="cursor-pointer" />
                     </span>
