@@ -33,7 +33,7 @@ html {
 }
 input {
   height: inherit;
-  width: 16rem;
+  width: 32rem;
   border: 2px solid #abd1c6;
   border-radius: 0.5rem;
   outline: none;
@@ -48,6 +48,9 @@ input:focus {
   border-color: #004643;
 }
 input:focus ~ .icon {
+  color: #004643;
+}
+.icon:active {
   color: #004643;
 }
 
@@ -88,4 +91,33 @@ input::placeholder {
 .box {
   height: 20rem;
   width: 15rem;
+}
+
+.modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 40;
+  height: 100%;
+  width: 100%;
+}
+
+.modal .back-drop {
+  position: absolute;
+  background: #111827f0;
+  width: 100%;
+  height: 100%;
+}
+
+.create-list {
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }

@@ -25,12 +25,12 @@ export const SignupIntro = () => {
 export const UserIntro = () => {
   return (
     <div className="text-greeny text-left m-5 mt-8 text-2xl cursor-default ">
-      <hi>
+      <h1>
         Start making your lists, don't be shy{' '}
         <span role="img" aria-label="blushing">
           🤭
         </span>
-      </hi>
+      </h1>
     </div>
   );
 };
