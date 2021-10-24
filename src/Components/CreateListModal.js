@@ -2,7 +2,7 @@ import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X, Smile } from 'react-feather';
 
-function CreateListModal({ setShowModal }) {
+function CreateListModal({ setShowModal, setPage }) {
   return (
     <div>
       <AnimatePresence>
@@ -31,7 +31,10 @@ function CreateListModal({ setShowModal }) {
                     </span>
                   </div>
                 </div>
-                <div className="rounded-full py-3 px-6 bg-ashy border-2 hover:bg-lgreeny hover:border-greeny cursor-pointer transition duration-200 ease-in-out">
+                <div
+                  className="rounded-full py-3 px-6 bg-ashy border-2 hover:bg-lgreeny hover:border-greeny cursor-pointer transition duration-200 ease-in-out"
+                  onClick={() => setPage('list')}
+                >
                   Create
                 </div>
               </div>
