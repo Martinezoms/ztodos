@@ -282,7 +282,7 @@ input::placeholder {
     left: 20%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1300px) {
   .modal-input {
     width: 9rem;
     font-size: 0.5rem;
