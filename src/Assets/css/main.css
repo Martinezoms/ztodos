@@ -17,6 +17,7 @@ html {
   height: 10%;
   margin-bottom: 20px;
   z-index: 20;
+  overflow: auto;
 }
 
 .login-body {
@@ -72,6 +73,10 @@ html {
   font-size: 1rem;
   text-indent: 1rem;
   transition: all 0.35s;
+  height: auto;
+}
+.input-container {
+  height: auto;
 }
 
 input:focus {
@@ -97,7 +102,7 @@ input::placeholder {
   width: 100%;
   height: 100%;
   max-width: 350px;
-  overflow: hidden;
+  overflow: auto;
   z-index: 20;
   transition: all 0.5s ease;
 }
@@ -111,7 +116,7 @@ input::placeholder {
   height: 100%;
   width: 0;
   max-width: 350px;
-  overflow: hidden;
+  overflow: auto;
   z-index: 20;
 }
 
@@ -158,21 +163,27 @@ input::placeholder {
   width: 100%;
   height: 100%;
 }
+.back-drop {
+  overflow: auto;
+}
 
 .create-list {
-  width: 50%;
-  height: 40%;
+  width: auto;
+  height: auto;
   position: absolute;
-  top: 30%;
-  left: 25%;
+  top: 25%;
+  left: 34%;
 }
 
 .list {
-  position: fixed;
+  position: absolute;
   width: 60%;
   height: 90%;
   top: 5%;
   right: 20%;
+}
+.list-container {
+  overflow: auto;
 }
 
 .list-area {
@@ -275,11 +286,25 @@ input::placeholder {
   .modal-input {
     width: 9rem;
     font-size: 0.5rem;
+    overflow: auto;
   }
   .create-list {
-    width: 60%;
-    height: 50%;
-    left: 20%;
-    font-size: 0.5rem;
+    top: 15%;
+    right: 30%;
+  }
+  .list {
+    width: 90%;
+    left: 5%;
+  }
+  .list-input {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+  .list-area {
+    height: 78%;
   }
 }

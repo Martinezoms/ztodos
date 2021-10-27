@@ -13,7 +13,7 @@ function App() {
       ) : page === 'signup' ? (
         <Signup setPage={setPage} />
       ) : page === 'list' ? (
-        <List />
+        <List setPage={setPage} />
       ) : (
         <Userpage setPage={setPage} />
       )}
