@@ -9,11 +9,11 @@ const Userpage = ({ setPage }) => {
   return (
     <div>
       {showModal && <CreateListModal setShowModal={setShowModal} setPage={setPage} />}
-      <div className="flex flex-row justify-between ">
+      <div className="flex flex-row justify-between bg-ashy nav">
         <UserIntro />
         <MenuBar />
       </div>
-      <div>
+      <div className="userpage">
         <Userlists setShowModal={setShowModal} />
       </div>
     </div>

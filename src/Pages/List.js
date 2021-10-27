@@ -17,7 +17,7 @@ function List() {
         <div>
           <div className="flex justify-between m-2 content-center">
             <span>
-              <Smile color={'#004643'} size="40" className="cursor-pointer m-2" />
+              <Smile color={'#004643'} size="40" className="cursor-pointer m-2 smile" />
             </span>
             <input placeholder="Type something..." className="list-input rounded-full py-3 px-6 mr-4"></input>
           </div>

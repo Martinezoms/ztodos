@@ -10,6 +10,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 20px;
+  z-index: 20;
+}
 
 .login-body {
   height: 100%;
@@ -45,7 +53,7 @@ html {
 }
 .modal-input {
   height: inherit;
-  width: 32rem;
+  width: 30rem;
   border: 2px solid #abd1c6;
   border-radius: 0.5rem;
   outline: none;
@@ -56,7 +64,7 @@ html {
   transition: all 0.35s;
 }
 .list-input {
-  width: 55rem;
+  width: 93%;
   border: 2px solid #abd1c6;
   outline: none;
   background: #e8e4e6;
@@ -84,6 +92,7 @@ input::placeholder {
   border-style: solid;
   border-width: 1px;
   position: fixed;
+  top: 0;
   right: 0;
   width: 100%;
   height: 100%;
@@ -97,6 +106,7 @@ input::placeholder {
   border-style: none;
   border-width: 1px;
   position: fixed;
+  top: 0;
   right: 0;
   height: 100%;
   width: 0;
@@ -106,8 +116,18 @@ input::placeholder {
 }
 
 .user-list {
-  height: 53rem;
+  height: 80%;
+  width: 95%;
+  z-index: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+.userpage {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 0;
+  overflow: auto;
 }
 
 .box {
@@ -134,13 +154,16 @@ input::placeholder {
 .modal .back-drop {
   position: absolute;
   background: #111827f0;
+  top: 0;
   width: 100%;
   height: 100%;
 }
 
 .create-list {
+  width: 50%;
+  height: 40%;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 25%;
 }
 
@@ -155,4 +178,108 @@ input::placeholder {
 .list-area {
   width: 100%;
   height: 85%;
+}
+
+@media screen and (max-width: 614px) {
+  .list-input {
+    border: 1px solid #abd1c6;
+    font-size: 0.8rem;
+  }
+  .smile {
+    size: 20;
+  }
+  .welcome {
+    font-size: 1.5rem;
+  }
+  .please {
+    font-size: 1rem;
+  }
+  .login-box {
+    padding: 35px;
+  }
+  .signup-intro {
+    font-size: 1rem;
+  }
+  .signup {
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .user-intro {
+    display: none;
+  }
+  .file {
+    size: 30;
+  }
+}
+@media screen and (max-width: 1555px) {
+  .user-list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 1375px) {
+  .user-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 1049px) {
+  .user-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .modal-input {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 806px) {
+  .user-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .modal-input {
+    width: 17rem;
+  }
+  @media screen and (max-width: 623px) {
+    .modal-input {
+      width: 15rem;
+    }
+  }
+}
+@media screen and (max-width: 553px) {
+  .user-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal-input {
+    width: 12rem;
+    font-size: 0.7rem;
+  }
+  .create-list {
+    font-size: 0.7rem;
+  }
+  .smile {
+    size: 20;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-input {
+    width: 10rem;
+  }
+  .create-list {
+    width: 60%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .modal-input {
+    width: 9rem;
+    font-size: 0.5rem;
+  }
+  .create-list {
+    width: 60%;
+    height: 50%;
+    left: 20%;
+    font-size: 0.5rem;
+  }
 }

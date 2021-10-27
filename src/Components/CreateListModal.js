@@ -15,7 +15,7 @@ function CreateListModal({ setShowModal, setPage }) {
               onClick={() => setShowModal(false)}
             />
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.4 }}>
-              <div className="bg-lgreeny text-greeny shadow-md rounded-lg  p-16 flex flex-col items-center  justify-center space-y-10 pt-20 w-1/2 create-list">
+              <div className="bg-lgreeny text-greeny shadow-md rounded-lg  p-16 flex flex-col items-center  justify-center space-y-10 pt-20  create-list">
                 <div className="space-y-2">
                   <div>What is this list for?</div>
                   <div className="wrapper ">
@@ -27,7 +27,7 @@ function CreateListModal({ setShowModal, setPage }) {
                   <div className="wrapper">
                     <input spellCheck="false" maxLength="3" placeholder="Insert emoji" className="modal-input" />
                     <span className="icon">
-                      <Smile size="35" className="cursor-pointer" />
+                      <Smile size="35" className="cursor-pointer smile" />
                     </span>
                   </div>
                 </div>
